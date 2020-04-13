@@ -1,6 +1,11 @@
 export interface Hero {
   id: number;
   name: string;
+  mail: string;
+  password: password;
+  petname: string;
+  pettype: string;
+  petbirthday: date;
 }
 
 

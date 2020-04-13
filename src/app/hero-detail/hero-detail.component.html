@@ -2,9 +2,38 @@
   <h2>{{hero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{hero.id}}</div>
   <div>
-    <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name"/>
-    </label>
+    <label>ユーザーID</label>
+    <input [(ngModel)]="hero.id" placeholder="user_id"/>
+    <label>*必須</label>
+    <p>
+    <label>ユーザー名</label>
+    <input [(ngModel)]="hero.name" placeholder="user_name"/>
+    <label>*必須</label>
+    <p>
+    <label>メールアドレス</label>
+    <input [(ngModel)]="hero.mail" placeholder="mail"/>
+    <label>*必須</label>
+    <p>
+    <label>パスワード</label>
+    <input [(ngModel)]="hero.password" placeholder="password"/>
+    <label>*必須</label>
+    <p>
+    <label>パスワードもう一度</label>
+    <input [(ngModel)]="hero.password" placeholder="password"/>
+    <label>*必須</label>
+    <p>
+    <label>ペット名</label>
+    <input [(ngModel)]="hero.petname" placeholder="pet_name"/>
+    <label>任意</label>
+    <p>
+    <label>種類（犬種）</label>
+    <input [(ngModel)]="hero.pettype" placeholder="pet_type"/>
+    <label>任意</label>
+    <p>
+    <label>ペットの誕生日</label>
+    <input [(ngModel)]="hero.petbirthday" placeholder="pet_birthday"/>
+    <label>任意</label>
+    <p>
   </div>
   <button (click)="goBack()">go back</button>
   <button (click)="save()">save</button>
