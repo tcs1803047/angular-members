@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '会員登録/管理共通画面';
+  title = 'ユーザー管理/会員情報更新共通画面';
 }
 
 
